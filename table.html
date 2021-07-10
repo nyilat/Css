@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+
+    <title>Table</title>
+    <style>
+        *{
+            font-family: 'Uchen', serif;
+            text-transform: capitalize;
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border: 1px solid #6de7f5;
+            border-collapse: collapse;
+            /* border: 1px solid black; */
+
+        }
+
+        thead th {
+            background-color: #3d5af1;
+            color: white;
+            padding: 10px;
+            
+        }
+        tbody td:first-child {
+            color: white;
+            background-color: #22d1ee;
+            text-align: center;
+        }
+
+        .total {
+            background-color: white !important;
+            text-align: center;
+            color: black !important;
+            letter-spacing: 5px;
+        }
+        tbody td:nth-child(2){
+            text-align: left;
+        }
+        
+        td {
+            border: 1px solid #6de7f5;
+            text-align: right;
+            padding: 10px;
+        }
+
+
+        tfoot td:last-child{
+            text-align: right;
+        }
+       
+        button{
+            padding: 10px;
+            margin-left: 82%;
+            border-radius: 5px;
+            background-color: #fc5185;
+            border: #fc5185;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #ee205e;
+            border: #ee205e;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Table (Selection Lesson)</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Shower Cream</td>
+                <td>1</td>
+                <td>3200</td>
+                <td>3200</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>tooth paste</td>
+                <td>2</td>
+                <td>1000</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>name a</td>
+                <td>1</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>name b</td>
+                <td>3</td>
+                <td>500</td>
+                <td>1500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="total" colspan="4"><strong>total</strong></td>
+                <td>6800</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <button>Print to PDF</button>
+</body>
+</html>
