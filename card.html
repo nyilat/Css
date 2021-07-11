@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/066f41d711.js" crossorigin="anonymous"></script>
+
+
+    <title>Card</title>
+    <style>
+        *{
+            font-family: 'Open Sans', sans-serif;
+        }
+        .card{
+            width: 350px;
+            /* border: 1px solid black; */
+            border-radius: 15px;
+            display: inline-block;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin: 5px;
+            vertical-align: top;
+            background-color: #fff;
+        }
+        .card:hover {
+            background-color: rgb(181, 222, 233);
+            transition: 0.5s;
+        }
+        .title {
+            font-weight: bold;
+            text-align: center;
+        }
+        .paragraph {
+            color: rgb(97, 97, 97);
+            padding: 10px;
+            text-align: justify;
+        }
+        .right{
+            text-align: right;
+        }
+        .left {
+            text-align: left;
+        }
+        .center {
+            text-align: center;
+        }
+        .image {
+            width: 100%;
+        }
+        .icon{
+            color: rgb(177, 19, 19);
+            font-size: 1em;
+        }
+        .seemore-btn{
+            width: 150px;
+            display: block;
+            margin: auto;
+            padding: 10px;
+            background-color: skyblue;
+            border: skyblue;
+            border-radius: 10px;
+            margin-bottom: -20px;
+            cursor: pointer;
+        }
+        .seemore-btn:hover {
+            background-color: rgb(201, 89, 108);
+            color: white;
+        }
+
+        .home-icon {
+            display: block;
+            margin-top: 30px;
+        }
+        .add-to-cart {
+            font-size: 1.5em;
+
+        }
+        body{
+            background-color: #fcfcfc;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="title">
+            <h3>My Website</h3>
+        </div>
+        <div class="paragraph left">
+            <p>
+            Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. 
+                Cum mollia dicta optio teibus 
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="title">
+            <h3>My honor</h3>
+        </div>
+        <div class="paragraph center">
+            <p>
+            Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. 
+                Cum mollia dicta optio teibus 
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="title">
+            <h3>My facebook</h3>
+        </div>
+        <div class="paragraph right">
+            <p>
+            Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. 
+                Cum mollia dicta optio teibus 
+            </p>
+        </div>
+    </div>
+    <div class="card">
+            <img src="img/sunset.jpg" alt="" class="image">
+        <div class="title">
+            <h3>The Sunset</h3>
+        </div>
+        <div class="paragraph left">
+            <p>
+            Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. 
+                Cum mollia dicta optio teibus 
+            </p>
+        </div>
+    </div>
+    <div class="card"style="overflow: visible;">
+        <div class="center">
+            <i class="home-icon fas fa-home fa-5x"></i>
+        </div>
+        <div class="title">
+            <h3><i class="icon fas fa-fire"></i>&nbsp;My Icon&nbsp;<i class="icon fas fa-fire"></i></h3>
+        </div>
+        <div class="paragraph left">
+            <p>
+            Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. 
+                Cum mollia dicta optio teibus
+                ldos foft kdit lot lso cm. 
+            </p>
+        </div>
+        <div>
+            <button class="seemore-btn">See more</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="img/macbook.jpg" alt="" class="image">
+        <!-- <caption class="add-to-cart">Add to cart<i class="fas fa-cart-plus"></i></caption> -->
+    <div class="title">
+        <h3>Macbook</h3>
+    </div>
+    <div class="paragraph left">
+        <p>
+        Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. 
+            Cum mollia dicta optio teibus 
+        </p>
+    </div>
+    </div>
+   
+</body>
+</html>
