@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <title>Login Form</title>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Libre Baskerville', serif;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #add6e6;
+    }
+    form{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login-form{
+        width: 350px;
+        height: 400px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    .login-form legend{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    input{
+        display: block;
+        /* border-radius: 10px; */
+        width: 80%;
+        height: 30px;
+        margin: auto;
+        margin-bottom: 15px;
+        padding: 10px;
+
+    }
+    h3 {
+        text-align: center;
+        padding: 15px;
+        margin: 30px 0;
+    }
+    .forget{
+        text-align: center;
+    }
+    a{
+        color: grey;
+    }
+    button{
+        width: 100px;
+        height: 40px;
+        border: 1px solid rgb(64, 137, 197);
+        border-radius: 10px;
+        padding: 10px;
+        display: block;
+        margin: auto;
+        margin-top: 40px;
+        background-color: rgb(93, 149, 196);
+        color: white !important;
+        cursor: pointer;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    button:hover{
+        background-color: rgb(46, 111, 165);
+    }
+    .text-color{
+        color: #363534;
+    }
+    label{
+        padding-left: 30px;
+    }
+</style>
+</head>
+<body>
+    <form action="sumit">
+        <fieldset class="login-form">
+            <legend class="text-color">
+                <i class="fas fa-user-lock"></i>
+                    Login Form
+            </legend>
+            <h3 class="text-color">Login</h3>
+            <div class="form-input">
+                <label for="username" class="text-color" >
+                    <i class="fas fa-user fa-fw"></i>Username
+                </label>
+                <input type="text" name="username" id="username" placeholder="Username">
+                <label for="password">
+                    <i class="fas fa-key fa-fw"></i>Password
+                </label>
+                <input type="text" name="password" id="password" placeholder="Password">
+
+            </div>
+            <div class="forget">
+                <a href="#">Forget Your Password?</a>
+            </div>
+            <button class="text-color">
+                <i class="fas fa-unlock-alt"></i>
+                Login
+            </button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
